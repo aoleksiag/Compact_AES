@@ -1,13 +1,14 @@
 `timescale 1 ns / 100 ps   // module timescale_check2;
 module xor_mod(
-        input clk,rst,
+        input clk,
+        input reset,
         input [31:0] XOR_MOD_key,
         input [7:0] XOR_MOD_in_1, XOR_MOD_in_2, XOR_MOD_in_3, XOR_MOD_in_4,
         input [2:0] i,
         output reg [127:0] data_out_XOR_MOD
         );
     always@(posedge clk) begin
-        if(rst)
+        if(reset)
             data_out_XOR_MOD <= 127'b0;
         else 
             case(i)
