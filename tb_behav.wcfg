@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="tb_behav.wdb" id="1">
+         <top_modules>
+            <top_module name="glbl" />
+            <top_module name="tb" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <zoom_setting>
+      <ZoomStartTime time="409000000000fs"></ZoomStartTime>
+      <ZoomEndTime time="940500000001fs"></ZoomEndTime>
+      <Cursor1Time time="545000000000fs"></Cursor1Time>
+   </zoom_setting>
+   <column_width_setting>
+      <NameColumnWidth column_width="291"></NameColumnWidth>
+      <ValueColumnWidth column_width="244"></ValueColumnWidth>
+   </column_width_setting>
+   <WVObjectSize size="38" />
+   <wvobject fp_name="/tb/u_top/clk" type="logic">
+      <obj_property name="ElementShortName">clk</obj_property>
+      <obj_property name="ObjectShortName">clk</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/u_top/busy_TOP" type="logic">
+      <obj_property name="ElementShortName">busy_TOP</obj_property>
+      <obj_property name="ObjectShortName">busy_TOP</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/u_top/reset" type="logic">
+      <obj_property name="ElementShortName">reset</obj_property>
+      <obj_property name="ObjectShortName">reset</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/u_top/sample_trig_top" type="logic">
+      <obj_property name="ElementShortName">sample_trig_top</obj_property>
+      <obj_property name="ObjectShortName">sample_trig_top</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/u_top/data_out_TOP" type="array">
+      <obj_property name="ElementShortName">data_out_TOP[127:0]</obj_property>
+      <obj_property name="ObjectShortName">data_out_TOP[127:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/u_top/TOP_DATA" type="array">
+      <obj_property name="ElementShortName">TOP_DATA[127:0]</obj_property>
+      <obj_property name="ObjectShortName">TOP_DATA[127:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/u_top/TOP_key" type="array">
+      <obj_property name="ElementShortName">TOP_key[127:0]</obj_property>
+      <obj_property name="ObjectShortName">TOP_key[127:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/u_top/round_count" type="array">
+      <obj_property name="ElementShortName">round_count[3:0]</obj_property>
+      <obj_property name="ObjectShortName">round_count[3:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/u_top/count" type="array">
+      <obj_property name="ElementShortName">count[3:0]</obj_property>
+      <obj_property name="ObjectShortName">count[3:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/u_top/sample_trig" type="logic">
+      <obj_property name="ElementShortName">sample_trig</obj_property>
+      <obj_property name="ObjectShortName">sample_trig</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/u_top/end_round_enable" type="logic">
+      <obj_property name="ElementShortName">end_round_enable</obj_property>
+      <obj_property name="ObjectShortName">end_round_enable</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/u_top/first_round_enable" type="logic">
+      <obj_property name="ElementShortName">first_round_enable</obj_property>
+      <obj_property name="ObjectShortName">first_round_enable</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/u_top/aes_block/AES_BLOCK_sample_trig" type="logic">
+      <obj_property name="ElementShortName">AES_BLOCK_sample_trig</obj_property>
+      <obj_property name="ObjectShortName">AES_BLOCK_sample_trig</obj_property>
+      <obj_property name="CustomSignalColor">#800080</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/u_top/aes_block/WH_key_temp" type="array">
+      <obj_property name="ElementShortName">WH_key_temp[127:0]</obj_property>
+      <obj_property name="ObjectShortName">WH_key_temp[127:0]</obj_property>
+      <obj_property name="CustomSignalColor">#800080</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/u_top/aes_block/key_block/key_out_WH" type="array">
+      <obj_property name="ElementShortName">key_out_WH[127:0]</obj_property>
+      <obj_property name="ObjectShortName">key_out_WH[127:0]</obj_property>
+      <obj_property name="CustomSignalColor">#800080</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/u_top/aes_block/temp_key" type="array">
+      <obj_property name="ElementShortName">temp_key[31:0]</obj_property>
+      <obj_property name="ObjectShortName">temp_key[31:0]</obj_property>
+      <obj_property name="CustomSignalColor">#800080</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/u_top/state_AES_TOP" type="array">
+      <obj_property name="ElementShortName">state_AES_TOP[2:0]</obj_property>
+      <obj_property name="ObjectShortName">state_AES_TOP[2:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/u_top/aes_block/state_aes_block" type="array">
+      <obj_property name="ElementShortName">state_aes_block[2:0]</obj_property>
+      <obj_property name="ObjectShortName">state_aes_block[2:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/u_top/aes_block/u1/out_1_SR" type="array">
+      <obj_property name="ElementShortName">out_1_SR[7:0]</obj_property>
+      <obj_property name="ObjectShortName">out_1_SR[7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/u_top/aes_block/u1/out_2_SR" type="array">
+      <obj_property name="ElementShortName">out_2_SR[7:0]</obj_property>
+      <obj_property name="ObjectShortName">out_2_SR[7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/u_top/aes_block/u1/out_3_SR" type="array">
+      <obj_property name="ElementShortName">out_3_SR[7:0]</obj_property>
+      <obj_property name="ObjectShortName">out_3_SR[7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/u_top/aes_block/u1/out_4_SR" type="array">
+      <obj_property name="ElementShortName">out_4_SR[7:0]</obj_property>
+      <obj_property name="ObjectShortName">out_4_SR[7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/u_top/aes_block/u2/out_1_SB_MC" type="array">
+      <obj_property name="ElementShortName">out_1_SB_MC[7:0]</obj_property>
+      <obj_property name="ObjectShortName">out_1_SB_MC[7:0]</obj_property>
+      <obj_property name="CustomSignalColor">#D2691E</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/u_top/aes_block/u2/out_2_SB_MC" type="array">
+      <obj_property name="ElementShortName">out_2_SB_MC[7:0]</obj_property>
+      <obj_property name="ObjectShortName">out_2_SB_MC[7:0]</obj_property>
+      <obj_property name="CustomSignalColor">#D2691E</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/u_top/aes_block/u2/out_3_SB_MC" type="array">
+      <obj_property name="ElementShortName">out_3_SB_MC[7:0]</obj_property>
+      <obj_property name="ObjectShortName">out_3_SB_MC[7:0]</obj_property>
+      <obj_property name="CustomSignalColor">#D2691E</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/u_top/aes_block/u2/out_4_SB_MC" type="array">
+      <obj_property name="ElementShortName">out_4_SB_MC[7:0]</obj_property>
+      <obj_property name="ObjectShortName">out_4_SB_MC[7:0]</obj_property>
+      <obj_property name="CustomSignalColor">#D2691E</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/u_top/aes_block/u2/end_mod_SB_MC" type="logic">
+      <obj_property name="ElementShortName">end_mod_SB_MC</obj_property>
+      <obj_property name="ObjectShortName">end_mod_SB_MC</obj_property>
+      <obj_property name="CustomSignalColor">#D2691E</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/u_top/aes_block/u2/state" type="array">
+      <obj_property name="ElementShortName">state[2:0]</obj_property>
+      <obj_property name="ObjectShortName">state[2:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/u_top/aes_block/u3/XOR_MOD_key" type="array">
+      <obj_property name="ElementShortName">XOR_MOD_key[31:0]</obj_property>
+      <obj_property name="ObjectShortName">XOR_MOD_key[31:0]</obj_property>
+      <obj_property name="CustomSignalColor">#FF00FF</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/u_top/aes_block/u3/XOR_MOD_in_1" type="array">
+      <obj_property name="ElementShortName">XOR_MOD_in_1[7:0]</obj_property>
+      <obj_property name="ObjectShortName">XOR_MOD_in_1[7:0]</obj_property>
+      <obj_property name="CustomSignalColor">#FF00FF</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/u_top/aes_block/u3/XOR_MOD_in_2" type="array">
+      <obj_property name="ElementShortName">XOR_MOD_in_2[7:0]</obj_property>
+      <obj_property name="ObjectShortName">XOR_MOD_in_2[7:0]</obj_property>
+      <obj_property name="CustomSignalColor">#FF00FF</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/u_top/aes_block/u3/XOR_MOD_in_3" type="array">
+      <obj_property name="ElementShortName">XOR_MOD_in_3[7:0]</obj_property>
+      <obj_property name="ObjectShortName">XOR_MOD_in_3[7:0]</obj_property>
+      <obj_property name="CustomSignalColor">#FF00FF</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/u_top/aes_block/u3/XOR_MOD_in_4" type="array">
+      <obj_property name="ElementShortName">XOR_MOD_in_4[7:0]</obj_property>
+      <obj_property name="ObjectShortName">XOR_MOD_in_4[7:0]</obj_property>
+      <obj_property name="CustomSignalColor">#FF00FF</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/u_top/aes_block/u3/data_out_XOR_MOD" type="array">
+      <obj_property name="ElementShortName">data_out_XOR_MOD[127:0]</obj_property>
+      <obj_property name="ObjectShortName">data_out_XOR_MOD[127:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/u_top/aes_block/data_out_AES_BLOCK" type="array">
+      <obj_property name="ElementShortName">data_out_AES_BLOCK[127:0]</obj_property>
+      <obj_property name="ObjectShortName">data_out_AES_BLOCK[127:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/u_top/aes_block/AES_BLOCK_data_in" type="array">
+      <obj_property name="ElementShortName">AES_BLOCK_data_in[127:0]</obj_property>
+      <obj_property name="ObjectShortName">AES_BLOCK_data_in[127:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/u_top/aes_block/u1/SR_data" type="array">
+      <obj_property name="ElementShortName">SR_data[127:0]</obj_property>
+      <obj_property name="ObjectShortName">SR_data[127:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/u_top/aes_block/key_temp_WH" type="array">
+      <obj_property name="ElementShortName">key_temp_WH[127:0]</obj_property>
+      <obj_property name="ObjectShortName">key_temp_WH[127:0]</obj_property>
+   </wvobject>
+</wave_config>

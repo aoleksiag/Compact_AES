@@ -1,4 +1,4 @@
-`timescale 1 ns / 100 ps   // module timescale_check2;
+
 module Aes_block_top#(parameter WIDTH=128)(
         input  wire                 clk,
         input  wire                 reset,
@@ -7,9 +7,9 @@ module Aes_block_top#(parameter WIDTH=128)(
         input  wire                 first_round_enable,
         input  wire     [WIDTH-1:0] AES_BLOCK_data_in,
         input  wire     [WIDTH-1:0] AES_BLOCK_key,
-        input  wire     [3:0] count,
+        input  wire     [3:0]       count,
         output reg      [WIDTH-1:0] data_out_AES_BLOCK,
-        output reg      busy_AES_BLOCK
+        output reg                  busy_AES_BLOCK
         );
     
     localparam size     = 3 ; 
@@ -112,7 +112,7 @@ module Aes_block_top#(parameter WIDTH=128)(
            
             S1_top: begin 
                 state_aes_block       <= S2_top;
-                sample_trig_AES_BLOCK <= 1;             // STAN, KTÓRY POZWALA NA ZAPĘTLENIE FSM
+                sample_trig_AES_BLOCK <= 1;             // this state allow us loop fsm 
             end
            
             S2_top: begin

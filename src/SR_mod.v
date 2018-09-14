@@ -1,17 +1,18 @@
-`timescale 1 ns / 100 ps   // module timescale_check2;
+
 module SR_mod(
-        input reset,first_round_enable,
-        input [127:0] SR_data,
-        input [2:0] i,
-        output reg [7:0] out_1_SR,out_2_SR,out_3_SR,out_4_SR
+        input  wire [127:0] SR_data,
+        input  wire [2:0]   i,
+        input  wire         first_round_enable,
+        input  wire         reset,
+        output reg  [7:0]   out_1_SR,out_2_SR,out_3_SR,out_4_SR
         );
         
     always@(*)begin
         if(reset)  begin
-            out_1_SR <= 0;
-            out_2_SR <= 0;
-            out_3_SR <= 0;
-            out_4_SR <= 0;
+            out_1_SR             <= 0;
+            out_2_SR             <= 0;
+            out_3_SR             <= 0;
+            out_4_SR             <= 0;
         end else begin
             case (i)
                 2'b00: begin
@@ -28,7 +29,7 @@ module SR_mod(
                         out_4_SR <= SR_data[7:0];
                     end
                 end
-                        
+
                 2'b01: begin
                     if(first_round_enable) begin
                         out_4_SR <= SR_data[71:64];
@@ -42,8 +43,7 @@ module SR_mod(
                         out_4_SR <= SR_data[103:96];
                     end
                 end
-                
-                
+
                 2'b10: begin
                     if(first_round_enable) begin
                         out_4_SR <= SR_data[39:32];
@@ -57,7 +57,7 @@ module SR_mod(
                         out_4_SR <= SR_data[71:64];
                     end
                 end
-                
+
                 2'b11: begin
                     if(first_round_enable) begin
                         out_4_SR <= SR_data[7:0];
@@ -71,15 +71,15 @@ module SR_mod(
                         out_4_SR <= SR_data[39:32];
                     end
                 end
-                
+
                 default: begin
-                    out_1_SR <= 0;
-                    out_2_SR <= 0;
-                    out_3_SR <= 0;
-                    out_4_SR <= 0;
+                    out_1_SR    <= 0;
+                    out_2_SR    <= 0;
+                    out_3_SR    <= 0;
+                    out_4_SR    <= 0;
                 end
             endcase
-       end
+       end //else
   end //always
       
 endmodule
